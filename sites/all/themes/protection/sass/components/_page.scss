@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Page styles
+ *
+ * Styles affecting the page, for instance the page backgrounds.
+ */
+
+body {
+	background-color: #6EE4FE;
+  padding-top: 10px;
+}
+
+#page {
+  background-color: lighten(#6EE4FE, 20%);
+  @include box-shadow(0 0 15px #999);
+  @include border-radius(10px);
+}

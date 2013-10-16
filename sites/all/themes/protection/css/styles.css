@@ -111,7 +111,7 @@ audio:not([controls]) {
  */
 /* line 106, ../sass/_normalize.scss */
 html {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: "Signika", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   /* 1 */
   font-size: 100%;
   /* 3 */
@@ -1701,6 +1701,48 @@ tr.selected td {
 .progress .filled {
   background-color: #0072b9;
   background-image: url('../images/progress.gif?1381425542');
+}
+
+/**
+ * @file
+ * HTML styles
+ *
+ * Styles for basic HTML elements such as headers (overriding Zen defaults).
+ */
+/* line 13, ../sass/components/_html.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-weight: 700;
+}
+
+/**
+ * @file
+ * Page styles
+ *
+ * Styles affecting the page, for instance the page backgrounds.
+ */
+/* line 8, ../sass/components/_page.scss */
+body {
+  background-color: #6EE4FE;
+  padding-top: 10px;
+}
+
+/* line 13, ../sass/components/_page.scss */
+#page {
+  background-color: #d3f7ff;
+  -webkit-box-shadow: 0 0 15px #999999;
+  -moz-box-shadow: 0 0 15px #999999;
+  box-shadow: 0 0 15px #999999;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
 
 /**
