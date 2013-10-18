@@ -111,7 +111,7 @@ audio:not([controls]) {
  */
 /* line 106, ../sass/_normalize.scss */
 html {
-  font-family: "Signika", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "Raleway", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   /* 1 */
   font-size: 100%;
   /* 3 */
@@ -2122,7 +2122,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora", Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-family: "PT Serif", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-weight: 700;
 }
 

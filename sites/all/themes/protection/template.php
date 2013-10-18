@@ -34,15 +34,21 @@ function protection_preprocess_maintenance_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("html" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function protection_preprocess_html(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
+function protection_preprocess_html(&$vars) {
+  // Add conditional CSS for IE.
+    // drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 9', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+  // Add conditional CSS for IE8 and below.
+    // drupal_add_css(path_to_theme() . '/css/ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+  // Add conditional CSS for IE7 and below.
+    // drupal_add_css(path_to_theme() . '/css/ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+  // Add conditional CSS for IE6.
+    // drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 6', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+  // Add external for Google Fonts.
+  drupal_add_css('//fonts.googleapis.com/css?family=Raleway:700,400|PT+Serif:400,700italic,400italic,700',array('type' => 'external'));
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().
-  //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
+    //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
 }
-// */
 
 /**
  * Override or insert variables into the page templates.
