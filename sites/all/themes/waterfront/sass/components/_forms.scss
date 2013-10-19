@@ -27,7 +27,7 @@ input[type="week"] {
   @include adjust-font-size-to(20px);
   @include adjust-leading-to(1);
   background-color: rgba($or-white, 0.6);
-  border: 3px $or-blue-dark solid;
+  border: 2px $or-blue-dark solid;
   @include border-radius(4px);
   width: 100%;
 
@@ -96,6 +96,12 @@ legend {
   @include padding-trailer(0.25);
   font-style: italic;
   border-bottom: 4px rgba($or-blue-dark, 0.6) solid;
+}
+
+// Hiding required asterisks, since everything is required
+
+.form-required {
+  display: none;
 }
 
 // Name fields

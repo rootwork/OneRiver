@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Messages
+ *
+ * Styles for Drupal messages.
+ */
+
+.messages {
+	@include border-radius(5px);
+}
+
+.messages--error {
+
+  .messages__list {
+
+    em {
+      font-style: normal;
+    }
+  }
+}
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border-width: 3px;
+}

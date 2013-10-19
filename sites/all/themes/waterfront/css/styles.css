@@ -2557,7 +2557,7 @@ input[type="week"] {
   line-height: 1.2em;
   line-height: 1.5em;
   background-color: rgba(238, 238, 238, 0.6);
-  border: 3px #477597 solid;
+  border: 2px #477597 solid;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -2691,34 +2691,66 @@ legend {
 }
 
 /* line 103, ../sass/components/_forms.scss */
+.form-required {
+  display: none;
+}
+
+/* line 109, ../sass/components/_forms.scss */
 .form-type-name-element {
   margin-bottom: 0;
 }
 
-/* line 108, ../sass/components/_forms.scss */
+/* line 114, ../sass/components/_forms.scss */
 .name-given-wrapper,
 .name-family-wrapper {
   width: 46%;
   margin-right: 0 !important;
 }
-/* line 112, ../sass/components/_forms.scss */
+/* line 118, ../sass/components/_forms.scss */
 .name-given-wrapper .form-item,
 .name-family-wrapper .form-item {
   margin: 0;
 }
 
-/* line 117, ../sass/components/_forms.scss */
+/* line 123, ../sass/components/_forms.scss */
 .name-family-wrapper {
   float: right !important;
 }
 
-/* line 123, ../sass/components/_forms.scss */
+/* line 129, ../sass/components/_forms.scss */
 .webform-client-form .form-actions {
   text-align: center;
 }
-/* line 126, ../sass/components/_forms.scss */
+/* line 132, ../sass/components/_forms.scss */
 .webform-client-form .form-actions input[type="submit"] {
   margin-right: 0;
+}
+
+/**
+ * @file
+ * Messages
+ *
+ * Styles for Drupal messages.
+ */
+/* line 8, ../sass/components/_messages.scss */
+.messages, .messages--status, .messages--warning, .messages--error {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 16, ../sass/components/_messages.scss */
+.messages--error .messages__list em {
+  font-style: normal;
+}
+
+/* line 24, ../sass/components/_messages.scss */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border-width: 3px;
 }
 
 /**
