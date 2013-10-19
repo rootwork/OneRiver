@@ -7,7 +7,7 @@
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function protection_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL)  {
+function waterfront_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL)  {
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
     return;
@@ -16,10 +16,10 @@ function protection_form_system_theme_settings_alter(&$form, &$form_state, $form
   // Create the form using Forms API: http://api.drupal.org/api/7
 
   /* -- Delete this line if you want to use this setting
-  $form['protection_example'] = array(
+  $form['waterfront_example'] = array(
     '#type'          => 'checkbox',
-    '#title'         => t('protection sample setting'),
-    '#default_value' => theme_get_setting('protection_example'),
+    '#title'         => t('waterfront sample setting'),
+    '#default_value' => theme_get_setting('waterfront_example'),
     '#description'   => t("This option doesn't do anything; it's just an example."),
   );
   // */
