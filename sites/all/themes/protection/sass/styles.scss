@@ -9,6 +9,7 @@
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
 @import "breakpoint";
+@import "sassy-buttons";
 
 /* HTML element (SMACSS base) rules */
 @import "normalize";
@@ -22,8 +23,10 @@
 @import "vendor/**/*";
 @import "components/html";
 @import "components/page";
+@import "components/links";
 @import "components/header";
 @import "components/footer";
+@import "components/menus";
 @import "print";
 
 /* SMACSS theme rules */

@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Header styles
+ *
+ * Styles for <a> links.
+ */
+
+a {
+	color: $or-blue-dark;
+  font-weight: bold;
+  @include transition(all 0.25s ease-in);
+
+  &:hover,
+  &:active {
+    color: darken($or-blue-dark, 10%);
+    background-color: #fff;
+    text-decoration: none;
+  }
+}

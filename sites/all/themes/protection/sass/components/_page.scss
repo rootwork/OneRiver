@@ -7,7 +7,8 @@
 
 body {
   padding: $gutter 0;
-	background-color: #fff;
+  color: $text-color;
+	background-color: $or-white;
   background-repeat: no-repeat;
   background-position: 0 50%;
   background-size: cover;
@@ -28,8 +29,8 @@ body {
 }
 
 #page {
-  background-color: rgba(#fff, 0.8);
-  border: 10px #fff solid;
+  background-color: rgba($or-white, 0.8);
+  border: 10px $or-white solid;
   @include border-radius(15px);
   @include box-shadow(0 0 5px $or-blue inset);
 }
