@@ -17,3 +17,12 @@ a {
     text-decoration: none;
   }
 }
+
+.contextual-links-wrapper a {
+	@include transition(all 0s linear);
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+}

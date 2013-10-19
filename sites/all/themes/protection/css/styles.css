@@ -2188,6 +2188,18 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+/* line 21, ../sass/components/_links.scss */
+.contextual-links-wrapper a {
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -o-transition: all 0s linear;
+  transition: all 0s linear;
+}
+/* line 25, ../sass/components/_links.scss */
+.contextual-links-wrapper a:hover, .contextual-links-wrapper a:active {
+  background-color: transparent;
+}
+
 /**
  * @file
  * HTML headers
