@@ -2674,7 +2674,13 @@ input[type="week"] {
   line-height: 1;
 }
 
-/* line 51, ../sass/components/_forms.scss */
+/* line 49, ../sass/components/_forms.scss */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* line 57, ../sass/components/_forms.scss */
 button,
 a.button,
 input[type="reset"],
@@ -2689,7 +2695,7 @@ input[type="button"] {
   text-shadow: rgba(238, 238, 238, 0.8) 0 1px 0;
 }
 
-/* line 62, ../sass/components/_forms.scss */
+/* line 68, ../sass/components/_forms.scss */
 .resizable-textarea textarea {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
@@ -2697,7 +2703,7 @@ input[type="button"] {
   -o-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
-/* line 66, ../sass/components/_forms.scss */
+/* line 72, ../sass/components/_forms.scss */
 .resizable-textarea .grippie {
   background-color: #477597;
   border-color: #477597;
@@ -2708,7 +2714,7 @@ input[type="button"] {
   border-radius: 0 0 4px 4px;
 }
 
-/* line 73, ../sass/components/_forms.scss */
+/* line 79, ../sass/components/_forms.scss */
 fieldset {
   background-color: rgba(238, 238, 238, 0.4);
   border: 2px rgba(102, 102, 102, 0.6) solid;
@@ -2718,24 +2724,24 @@ fieldset {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 78, ../sass/components/_forms.scss */
+/* line 84, ../sass/components/_forms.scss */
 fieldset.collapsed {
   background-color: transparent;
 }
-/* line 82, ../sass/components/_forms.scss */
+/* line 88, ../sass/components/_forms.scss */
 fieldset.filter-wrapper {
   border: none;
   background-color: transparent;
 }
 
-/* line 88, ../sass/components/_forms.scss */
+/* line 94, ../sass/components/_forms.scss */
 legend {
   color: #333333;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-/* line 94, ../sass/components/_forms.scss */
+/* line 100, ../sass/components/_forms.scss */
 .fieldset-description {
   margin-bottom: 1.5em;
   padding-bottom: 0.375em;
@@ -2743,38 +2749,38 @@ legend {
   border-bottom: 4px rgba(71, 117, 151, 0.6) solid;
 }
 
-/* line 103, ../sass/components/_forms.scss */
+/* line 109, ../sass/components/_forms.scss */
 .form-required {
   display: none;
 }
 
-/* line 109, ../sass/components/_forms.scss */
+/* line 115, ../sass/components/_forms.scss */
 .form-type-name-element {
   margin-bottom: 0;
 }
 
-/* line 114, ../sass/components/_forms.scss */
+/* line 120, ../sass/components/_forms.scss */
 .name-given-wrapper,
 .name-family-wrapper {
   width: 46%;
   margin-right: 0 !important;
 }
-/* line 118, ../sass/components/_forms.scss */
+/* line 124, ../sass/components/_forms.scss */
 .name-given-wrapper .form-item,
 .name-family-wrapper .form-item {
   margin: 0;
 }
 
-/* line 123, ../sass/components/_forms.scss */
+/* line 129, ../sass/components/_forms.scss */
 .name-family-wrapper {
   float: right !important;
 }
 
-/* line 129, ../sass/components/_forms.scss */
+/* line 135, ../sass/components/_forms.scss */
 .webform-client-form .form-actions {
   text-align: center;
 }
-/* line 132, ../sass/components/_forms.scss */
+/* line 138, ../sass/components/_forms.scss */
 .webform-client-form .form-actions input[type="submit"] {
   margin-right: 0;
 }
