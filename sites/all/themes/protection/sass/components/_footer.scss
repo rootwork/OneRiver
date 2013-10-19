@@ -1,0 +1,14 @@
+/**
+ * @file
+ * Header styles
+ *
+ * Styles for the header region.
+ */
+
+#footer {
+  margin-top: $gutter-half;
+  padding-top: $gutter-quart;
+  padding-bottom: $gutter-quart;
+  background-color: rgba(#fff, 0.75);
+  @include border-radius(0 0 5px 5px);
+}

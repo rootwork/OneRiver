@@ -6,12 +6,30 @@
  */
 
 body {
-	background-color: #6EE4FE;
-  padding-top: 10px;
+  padding: $gutter 0;
+	background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: image-url("river_flickr-tomspix_480.jpg");
+
+  @include breakpoint($bp-south) {
+    background-image: image-url("river_flickr-tomspix_960.jpg");
+  }
+
+  @include breakpoint($bp-christian) {
+    background-image: image-url("river_flickr-tomspix_1250.jpg");
+  }
+
+  @include breakpoint($bp-washington) {
+    background-image: image-url("river_flickr-tomspix_2000.jpg");
+  }
 }
 
 #page {
-  background-color: lighten(#6EE4FE, 20%);
-  @include box-shadow(0 0 15px #999);
-  @include border-radius(10px);
+  background-color: rgba(#fff, 0.8);
+  border: 10px #fff solid;
+  @include border-radius(15px);
+  @include box-shadow(0 0 5px $or-blue inset);
 }

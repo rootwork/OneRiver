@@ -97,6 +97,8 @@ $font-heading:     $ptserif;
 // Colors, etc.
 //
 
+$or-blue: #97c8f4;
+
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;
 
@@ -106,6 +108,15 @@ $nav-height: 3em;
 // Tab styling.
 $tabs-container-bg: #fff;
 $tabs-border: #bbb;
+
+//
+// Breakpoints
+// Values come from Zen's _responsive.scss
+// 
+
+$bp-south: 480px;
+$bp-christian: 960px;
+$bp-washington: 1200px;
 
 
 // =============================================================================

@@ -8,6 +8,7 @@
 
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
+@import "breakpoint";
 
 /* HTML element (SMACSS base) rules */
 @import "normalize";
@@ -18,9 +19,11 @@
 /* Component (SMACSS module) rules */
 @import "components/misc";
 // Optionally, add your own components here.
-@import "vendor/formalize";
+@import "vendor/**/*";
 @import "components/html";
 @import "components/page";
+@import "components/header";
+@import "components/footer";
 @import "print";
 
 /* SMACSS theme rules */
