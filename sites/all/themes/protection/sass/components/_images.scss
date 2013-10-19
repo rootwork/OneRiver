@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Images
+ *
+ * Styles for inline images.
+ */
+
+.media-image {
+  border: 3px $or-white solid;
+  margin-bottom: $gutter;
+
+  &[style*="float: right;"] {
+    margin-left: $gutter;
+  }
+
+  &[style*="float: left;"] {
+    margin-right: $gutter;
+  }
+}

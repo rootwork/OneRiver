@@ -1,0 +1,129 @@
+/**
+ * @file
+ * Forms
+ *
+ * Styles for forms and form fields.
+ */
+
+// Form fields and button styling
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  font-family: $font-body;
+  color: $text-color;
+  @include adjust-font-size-to(20px);
+  @include adjust-leading-to(1);
+  background-color: rgba($or-white, 0.6);
+  border: 3px $or-blue-dark solid;
+  @include border-radius(4px);
+  width: 100%;
+
+  &:active,
+  &:focus {
+    background-color: rgba(#fff, 1);
+    border-color: lighten($or-blue-dark, 20%);
+    @include box-shadow(lighten($or-blue, 20%) 0 0 5px);
+  }
+
+  .cke_dialog & {
+    font-size: 1em;
+    line-height: 1;
+  }
+}
+
+button,
+a.button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  margin-right: 1em;
+  padding: 15px 25px;
+  font-family: $font-body;
+  text-transform: none;
+  @include adjust-font-size-to(24px);
+  @include letterpress();
+}
+
+.resizable-textarea {
+
+  textarea {
+    @include border-radius(4px 4px 0 0);
+  }
+
+  .grippie {
+    background-color: rgba(lighten($text-color, 20%), 0.6);
+    border-color: rgba(lighten($text-color, 20%), 0.6);
+    @include border-radius(0 0 4px 4px);
+  }
+}
+
+fieldset {
+  background-color: rgba($or-white, 0.4);
+  border: 2px rgba(lighten($text-color, 20%), 0.6) solid;
+  @include border-radius(4px);
+
+  &.collapsed {
+    background-color: transparent;
+  }
+
+  &.filter-wrapper {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+legend {
+  color: $text-color;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.fieldset-description {
+  @include trailer(1);
+  @include padding-trailer(0.25);
+  font-style: italic;
+  border-bottom: 4px rgba($or-blue-dark, 0.6) solid;
+}
+
+// Name fields
+
+.form-type-name-element {
+  margin-bottom: 0;
+}
+
+.name-given-wrapper,
+.name-family-wrapper {
+  width: 46%;
+  margin-right: 0 !important;
+
+  .form-item {
+    margin: 0;
+  }
+}
+
+.name-family-wrapper {
+  float: right !important;
+}
+
+// Webform submit button
+
+.webform-client-form .form-actions {
+  text-align: center;
+
+  input[type="submit"] {
+    margin-right: 0;
+  }
+}
