@@ -93,6 +93,14 @@ function _typogrify_filter_tips($filter, $format, $long) {
   return $output;
 }
 
+function _typogrify_unquote($_) {
+  $_ = str_replace(
+    array('&lt;', '&gt;'),
+    array('<',    '>'),
+    $_);
+  return $_;
+}
+
 /**
  * Implements hook_init().
  */
@@ -144,7 +152,9 @@ function _typogrify_process($text, $filter, $format, $langcode, $cache, $cache_i
 
   // Build a list of arrows to convert.
   foreach (unicode_conversion_map('arrow') as $ascii => $unicode) {
-    if (isset($filter->settings['arrows'][$ascii]) && $filter->settings['arrows'][$ascii]) {
+    $htmle = _typogrify_unquote($ascii);
+    if ((isset($filter->settings['arrows'][$ascii]) && $filter->settings['arrows'][$ascii]) ||
+       (isset($filter->settings['arrows'][$htmle]) && $filter->settings['arrows'][$htmle])) {
       $characters_to_convert[] = $ascii;
     }
   }
@@ -205,7 +215,7 @@ function _typogrify_process($text, $filter, $format, $langcode, $cache, $cache_i
 
   // Replace normal spaces with non-breaking spaces before "double punctuation
   // marks". This is especially useful in french.
-  if ($filter->settings['space_to_nbsp']) {
+  if (isset($filter->settings['space_to_nbsp']) && $filter->settings['space_to_nbsp']) {
     $text = Typogrify::space_to_nbsp($text);
   }
 
@@ -365,7 +375,7 @@ function _typogrify_settings($form, &$form_state, $filter, $format, $defaults, $
   $arrow_options = array();
   foreach (unicode_conversion_map('arrow') as $ascii => $unicode) {
     $arrow_options[$ascii] = t('Convert <code>@ascii</code> to !unicode', array(
-      '@ascii' => $ascii,
+      '@ascii' => _typogrify_unquote($ascii),
       '!unicode' => $unicode,
     ));
 
@@ -400,7 +410,7 @@ function _typogrify_settings($form, &$form_state, $filter, $format, $defaults, $
   $quotes_options = array();
   foreach (unicode_conversion_map('quotes') as $quotes => $unicode) {
     $quotes_options[$quotes] = t('Convert <code>@ascii</code> to !unicode', array(
-      '@ascii' => $quotes,
+      '@ascii' => _typogrify_unquote($quotes),
       '!unicode' => $unicode,
     ));
   }
