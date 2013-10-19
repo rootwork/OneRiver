@@ -64,8 +64,8 @@ input[type="button"] {
   }
 
   .grippie {
-    background-color: rgba(lighten($text-color, 20%), 0.6);
-    border-color: rgba(lighten($text-color, 20%), 0.6);
+    background-color: $or-blue-dark;
+    border-color: $or-blue-dark;
     @include border-radius(0 0 4px 4px);
   }
 }

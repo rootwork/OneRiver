@@ -1704,6 +1704,46 @@ tr.selected td {
   background-image: url('../images/progress.gif?1381425542');
 }
 
+/**
+ * @file
+ * Colorbox
+ *
+ * Styles for Colorbox overlays.
+ */
+/* line 10, ../sass/vendor/_colorbox.scss */
+#colorbox #page {
+  background-color: #fff;
+  border-width: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+/* line 17, ../sass/vendor/_colorbox.scss */
+#colorbox #header {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* line 21, ../sass/vendor/_colorbox.scss */
+#colorbox #content {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 36px;
+}
+
+/* line 29, ../sass/vendor/_colorbox.scss */
+#cboxOverlay {
+  opacity: 0.75 !important;
+}
+
 /* line 10, ../sass/vendor/_formalize.scss */
 .input_tiny {
   width: 50px;
@@ -2646,8 +2686,8 @@ input[type="button"] {
 }
 /* line 66, ../sass/components/_forms.scss */
 .resizable-textarea .grippie {
-  background-color: rgba(102, 102, 102, 0.6);
-  border-color: rgba(102, 102, 102, 0.6);
+  background-color: #477597;
+  border-color: #477597;
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   -ms-border-radius: 0 0 4px 4px;
@@ -2771,6 +2811,26 @@ legend {
 /* line 16, ../sass/components/_images.scss */
 .media-image[style*="float: left;"] {
   margin-right: 36px;
+}
+
+/**
+ * @file
+ * Forward
+ *
+ * Styles for the email forward module.
+ */
+/* line 11, ../sass/components/_forward.scss */
+#forward-form #edit-page {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 19, ../sass/components/_forward.scss */
+.forward_link a:hover, .forward_link a:active {
+  background-color: transparent;
 }
 
 /**

@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Forward
+ *
+ * Styles for the email forward module.
+ */
+
+#forward-form {
+
+  // Remove title of page being forwarded, since there's only one it's confusing
+	#edit-page {
+		@include element-invisible;
+	}
+}
+
+.forward_link a {
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+}
