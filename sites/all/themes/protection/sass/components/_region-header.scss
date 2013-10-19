@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Header styles
+ *
+ * Styles for the header region.
+ */
+
+#header {
+  margin-bottom: $gutter-half;
+  padding-top: $gutter-quart;
+  padding-bottom: $gutter-quart;
+  background-color: rgba($or-blue, 0.6);
+
+  @include breakpoint($bp-christian) {
+    @include border-radius(5px 5px 0 0);
+  }
+}

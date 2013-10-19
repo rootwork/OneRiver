@@ -1,0 +1,36 @@
+// Mixins relating to images
+
+// Image replacement technique, from HTML5 Boilerplate
+// https://github.com/h5bp/html5-boilerplate/blob/v4.0.0/css/main.css
+// 
+// Mixin takes the arguments:
+// - image path
+// - width of entity
+// - height of entity
+// - float, if the replaced image is in an inline menu
+// - display, set by default to "block"
+
+@mixin ir($img_path, $display: block, $width: image-width($img_path), $height: image-height($img_path)) {
+  background: {
+    color: transparent;
+    image: image-url($img_path);
+    repeat: no-repeat;
+    position: 0 0;
+  };
+  
+  display: $display;
+  width: $width;
+  height: $height;
+
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+}

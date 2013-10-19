@@ -6,7 +6,6 @@
  */
 
 body {
-  padding: $gutter 0;
   color: $text-color;
 	background-color: $or-white;
   background-repeat: no-repeat;
@@ -20,6 +19,7 @@ body {
   }
 
   @include breakpoint($bp-christian) {
+    padding: $gutter 0;
     background-image: image-url("river_flickr-tomspix_1250.jpg");
   }
 
@@ -30,7 +30,11 @@ body {
 
 #page {
   background-color: rgba($or-white, 0.8);
-  border: 10px $or-white solid;
-  @include border-radius(15px);
-  @include box-shadow(0 0 5px $or-blue inset);
+  @include letterpress();
+
+  @include breakpoint($bp-christian) {
+    border: 10px $or-white solid;
+    @include border-radius(15px);
+    @include box-shadow(0 0 5px $or-blue inset);
+  }
 }

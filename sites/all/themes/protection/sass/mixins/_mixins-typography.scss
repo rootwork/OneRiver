@@ -1,0 +1,7 @@
+// Type-related mixins
+
+/* Letterpress effect */
+
+@mixin letterpress($opacity: 0.8, $color: #eee){
+  text-shadow: rgba($color, $opacity) 0 1px 0;
+}

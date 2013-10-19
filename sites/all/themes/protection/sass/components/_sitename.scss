@@ -1,0 +1,41 @@
+/**
+ * @file
+ * Site name
+ *
+ * Styles for the website name, slogan and logo.
+ */
+
+/* Site name/slogan */
+
+h1#site-name {
+  @include adjust-font-size-to(48px);
+  @include rhythm(0, 0, 0, 0, 48px);
+  @include letterpress(0);
+
+  a {
+	  color: $or-blue-dark;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+      background-color: transparent;
+    }
+  }
+
+  // Place title and slogan side by side on larger screens
+  @include breakpoint($bp-christian) {
+    display: inline-block;
+    margin-right: $gutter;
+    vertical-align: top;
+  }
+}
+
+#site-slogan {
+  @include adjust-font-size-to(30px);
+  @include rhythm(0, 0, 0, 0, 30px);
+
+  @include breakpoint($bp-christian) {
+    @include ir("abovegrade.png");
+    display: inline-block;
+  }
+}

@@ -6,6 +6,7 @@
  * of these @include files will be combined into a single file.
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
+/* Letterpress effect */
 /* HTML element (SMACSS base) rules */
 /**
  * @file
@@ -608,8 +609,8 @@ table {
 .region-sidebar-first,
 .region-sidebar-second,
 #footer {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 18px;
+  padding-right: 18px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -741,8 +742,8 @@ table {
   }
   /* line 137, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 18px;
+    padding-right: 18px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -2111,30 +2112,12 @@ optgroup::-moz-focus-inner {
 
 /**
  * @file
- * HTML styles
- *
- * Styles for basic HTML elements such as headers (overriding Zen defaults).
- */
-/* line 13, ../sass/components/_html.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "PT Serif", Georgia, "Times New Roman", "DejaVu Serif", serif;
-  font-weight: 700;
-}
-
-/**
- * @file
  * Page styles
  *
  * Styles affecting the page, for instance the page backgrounds.
  */
 /* line 8, ../sass/components/_page.scss */
 body {
-  padding: 50px 0;
   color: #333333;
   background-color: #eeeeee;
   background-repeat: no-repeat;
@@ -2152,6 +2135,7 @@ body {
 @media (min-width: 960px) {
   /* line 8, ../sass/components/_page.scss */
   body {
+    padding: 36px 0;
     background-image: url('../images/river_flickr-tomspix_1250.jpg?1382139502');
   }
 }
@@ -2165,15 +2149,21 @@ body {
 /* line 31, ../sass/components/_page.scss */
 #page {
   background-color: rgba(238, 238, 238, 0.8);
-  border: 10px #eeeeee solid;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 0 5px #97c8f4 inset;
-  -moz-box-shadow: 0 0 5px #97c8f4 inset;
-  box-shadow: 0 0 5px #97c8f4 inset;
+  text-shadow: rgba(238, 238, 238, 0.8) 0 1px 0;
+}
+@media (min-width: 960px) {
+  /* line 31, ../sass/components/_page.scss */
+  #page {
+    border: 10px #eeeeee solid;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 5px #97c8f4 inset;
+    -moz-box-shadow: 0 0 5px #97c8f4 inset;
+    box-shadow: 0 0 5px #97c8f4 inset;
+  }
 }
 
 /**
@@ -2200,21 +2190,92 @@ a:hover, a:active {
 
 /**
  * @file
- * Header styles
+ * HTML headers
  *
- * Styles for the header region.
+ * Styles for HTML headers (e.g. <h1>).
  */
-/* line 8, ../sass/components/_header.scss */
-#header {
-  margin-bottom: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: rgba(151, 200, 244, 0.6);
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  -ms-border-radius: 5px 5px 0 0;
-  -o-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
+/* line 14, ../sass/components/_headers.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Serif", Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-weight: 700;
+  color: #333333;
+  text-shadow: rgba(238, 238, 238, 0.8) 0 1px 0;
+}
+
+/* line 21, ../sass/components/_headers.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.5em;
+}
+
+/* line 26, ../sass/components/_headers.scss */
+h2 {
+  font-size: 2.625em;
+  line-height: 1.14286em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.57143em;
+}
+
+/* line 31, ../sass/components/_headers.scss */
+h3 {
+  font-size: 1.875em;
+  line-height: 1.6em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.8em;
+}
+
+/* line 36, ../sass/components/_headers.scss */
+h4 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1em;
+}
+
+/* line 41, ../sass/components/_headers.scss */
+h5 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.75em;
+}
+
+/* line 46, ../sass/components/_headers.scss */
+h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Page title */
+/* line 55, ../sass/components/_headers.scss */
+h1#page-title {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.46154em;
 }
 
 /**
@@ -2223,17 +2284,46 @@ a:hover, a:active {
  *
  * Styles for the header region.
  */
-/* line 8, ../sass/components/_footer.scss */
+/* line 8, ../sass/components/_region-header.scss */
+#header {
+  margin-bottom: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: rgba(151, 200, 244, 0.6);
+}
+@media (min-width: 960px) {
+  /* line 8, ../sass/components/_region-header.scss */
+  #header {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+/**
+ * @file
+ * Header styles
+ *
+ * Styles for the header region.
+ */
+/* line 8, ../sass/components/_region-footer.scss */
 #footer {
-  margin-top: 25px;
-  padding-top: 12.5px;
-  padding-bottom: 12.5px;
-  background-color: rgba(255, 255, 255, 0.75);
-  -webkit-border-radius: 0 0 5px 5px;
-  -moz-border-radius: 0 0 5px 5px;
-  -ms-border-radius: 0 0 5px 5px;
-  -o-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
+  margin-top: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: rgba(238, 238, 238, 0.75);
+}
+@media (min-width: 960px) {
+  /* line 8, ../sass/components/_region-footer.scss */
+  #footer {
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+  }
 }
 
 /**
@@ -2324,6 +2414,75 @@ a:hover, a:active {
   -moz-transition: all 0.25s ease-in;
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
+}
+
+/**
+ * @file
+ * Site name
+ *
+ * Styles for the website name, slogan and logo.
+ */
+/* Site name/slogan */
+/* line 10, ../sass/components/_sitename.scss */
+h1#site-name {
+  font-size: 3em;
+  line-height: 1.5em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  text-shadow: rgba(238, 238, 238, 0) 0 1px 0;
+}
+/* line 15, ../sass/components/_sitename.scss */
+h1#site-name a {
+  color: #477597;
+}
+/* line 19, ../sass/components/_sitename.scss */
+h1#site-name a:hover, h1#site-name a:active {
+  text-decoration: none;
+  background-color: transparent;
+}
+@media (min-width: 960px) {
+  /* line 10, ../sass/components/_sitename.scss */
+  h1#site-name {
+    display: inline-block;
+    margin-right: 36px;
+    vertical-align: top;
+  }
+}
+
+/* line 33, ../sass/components/_sitename.scss */
+#site-slogan {
+  font-size: 1.875em;
+  line-height: 1.6em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+@media (min-width: 960px) {
+  /* line 33, ../sass/components/_sitename.scss */
+  #site-slogan {
+    background-color: transparent;
+    background-image: url('../images/abovegrade.png?1382147346');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: block;
+    width: 500px;
+    height: 80px;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+    display: inline-block;
+  }
+  /* line 30, ../sass/mixins/_mixins-images.scss */
+  #site-slogan:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
 }
 
 /**

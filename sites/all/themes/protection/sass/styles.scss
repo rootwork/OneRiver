@@ -10,6 +10,7 @@
 @import "init";
 @import "breakpoint";
 @import "sassy-buttons";
+@import "mixins/**/*";
 
 /* HTML element (SMACSS base) rules */
 @import "normalize";
@@ -19,14 +20,19 @@
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
+
 // Optionally, add your own components here.
 @import "vendor/**/*";
-@import "components/html";
+
 @import "components/page";
 @import "components/links";
-@import "components/header";
-@import "components/footer";
+@import "components/headers";
+
+@import "components/region-header";
+@import "components/region-footer";
+
 @import "components/menus";
+@import "components/sitename";
 @import "print";
 
 /* SMACSS theme rules */

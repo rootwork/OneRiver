@@ -127,8 +127,8 @@ ul {
   }
   /* line 137, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 18px;
+    padding-right: 18px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
