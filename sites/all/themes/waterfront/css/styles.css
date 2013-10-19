@@ -2284,10 +2284,12 @@ h6 {
 /* Page title */
 /* line 55, ../sass/components/_headers.scss */
 h1#page-title {
+  font-size: 2.625em;
+  line-height: 1.14286em;
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.46154em;
+  margin-bottom: 0.57143em;
 }
 
 /**
@@ -2426,6 +2428,36 @@ h1#page-title {
   -moz-transition: all 0.25s ease-in;
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
+}
+
+/**
+ * @file
+ * Blocks
+ *
+ * Styles for content in blocks.
+ */
+/* line 12, ../sass/components/_blocks.scss */
+.block p,
+.block ul,
+.block ol {
+  text-align: left;
+}
+/* line 16, ../sass/components/_blocks.scss */
+.block .media-image {
+  margin-bottom: 0;
+}
+
+/**
+ * @file
+ * Nodes
+ *
+ * Styles for content in nodes.
+ */
+/* line 12, ../sass/components/_nodes.scss */
+.node p,
+.node ul,
+.node ol {
+  text-align: justify;
 }
 
 /**
@@ -2707,11 +2739,6 @@ legend {
 /* line 16, ../sass/components/_images.scss */
 .media-image[style*="float: left;"] {
   margin-right: 36px;
-}
-
-/* line 21, ../sass/components/_images.scss */
-.block .media-image {
-  margin-bottom: 0;
 }
 
 /**

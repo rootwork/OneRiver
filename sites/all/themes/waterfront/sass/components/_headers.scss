@@ -53,5 +53,6 @@ h6 {
 /* Page title */
 
 h1#page-title {
-  @include rhythm(0, 0, 0, 1, 52px);
+  @include adjust-font-size-to(42px);
+  @include rhythm(0, 0, 0, 1, 42px);
 }

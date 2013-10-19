@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Blocks
+ *
+ * Styles for content in blocks.
+ */
+
+.block {
+
+  p,
+  ul,
+  ol {
+    text-align: left;
+  }
+
+  .media-image {
+    margin-bottom: 0;
+  }
+}
