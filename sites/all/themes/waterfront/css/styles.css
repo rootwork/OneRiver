@@ -2216,10 +2216,10 @@ body {
 a {
   color: #477597;
   font-weight: bold;
-  -webkit-transition: all 0.25s ease-in;
-  -moz-transition: all 0.25s ease-in;
-  -o-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in, text-decoration 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in, text-decoration 0.25s ease-in;
+  -o-transition: all 0.25s ease-in, text-decoration 0.25s ease-in;
+  transition: all 0.25s ease-in, text-decoration 0.25s ease-in;
 }
 /* line 14, ../sass/components/_links.scss */
 a:hover, a:active {
@@ -2476,13 +2476,22 @@ h1#page-title {
  *
  * Styles for content in blocks.
  */
-/* line 12, ../sass/components/_blocks.scss */
+/* line 10, ../sass/components/_blocks.scss */
+.block h2.block-title {
+  font-size: 1.875em;
+  line-height: 1.6em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.8em;
+}
+/* line 17, ../sass/components/_blocks.scss */
 .block p,
 .block ul,
 .block ol {
   text-align: left;
 }
-/* line 16, ../sass/components/_blocks.scss */
+/* line 21, ../sass/components/_blocks.scss */
 .block .media-image {
   margin-bottom: 0;
 }
@@ -2493,7 +2502,11 @@ h1#page-title {
  *
  * Styles for content in nodes.
  */
-/* line 12, ../sass/components/_nodes.scss */
+/* line 8, ../sass/components/_nodes.scss */
+.node {
+  margin-bottom: 36px;
+}
+/* line 13, ../sass/components/_nodes.scss */
 .node p,
 .node ul,
 .node ol {
@@ -2828,9 +2841,73 @@ legend {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 19, ../sass/components/_forward.scss */
-.forward_link a:hover, .forward_link a:active {
+/* line 17, ../sass/components/_forward.scss */
+.forward_link a,
+a.forward-page {
+  display: block;
+  background-image: url('../images/email.png?1382170256');
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 52px;
+  vertical-align: middle;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+/* line 30, ../sass/components/_forward.scss */
+.forward_link a:hover, .forward_link a:active,
+a.forward-page:hover,
+a.forward-page:active {
   background-color: transparent;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/**
+ * @file
+ * Sharing
+ *
+ * Styles for social media links.
+ */
+/* line 9, ../sass/components/_sharing.scss */
+.share-facebook,
+.share-twitter {
+  display: block;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 52px;
+  vertical-align: middle;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+/* line 21, ../sass/components/_sharing.scss */
+.share-facebook:hover, .share-facebook:active,
+.share-twitter:hover,
+.share-twitter:active {
+  background-color: transparent;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 27, ../sass/components/_sharing.scss */
+.share-facebook {
+  background-image: url('../images/facebook.png?1382170256');
+}
+
+/* line 31, ../sass/components/_sharing.scss */
+.share-twitter {
+  background-image: url('../images/twitter.png?1382170256');
 }
 
 /**

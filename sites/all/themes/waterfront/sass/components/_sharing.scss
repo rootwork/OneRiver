@@ -1,22 +1,13 @@
 /**
  * @file
- * Forward
+ * Sharing
  *
- * Styles for the email forward module.
+ * Styles for social media links.
  */
 
-#forward-form {
-
-  // Remove title of page being forwarded, since there's only one it's confusing
-	#edit-page {
-		@include element-invisible;
-	}
-}
-
-.forward_link a,
-a.forward-page {
+.share-facebook,
+.share-twitter {
   display: block;
-  background-image: image-url("email.png");
   background-position: 0 50%;
   background-repeat: no-repeat;
   height: 48px;
@@ -31,4 +22,12 @@ a.forward-page {
     background-color: transparent;
     @include opacity(1);
   }
+}
+
+.share-facebook {
+  background-image: image-url("facebook.png");
+}
+
+.share-twitter {
+  background-image: image-url("twitter.png");
 }

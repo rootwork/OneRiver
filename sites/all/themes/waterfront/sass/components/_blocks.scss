@@ -7,6 +7,11 @@
 
 .block {
 
+  h2.block-title {
+    @include adjust-font-size-to(30px);
+    @include rhythm(0, 0, 0, 1, 30px);
+  }
+
   p,
   ul,
   ol {
