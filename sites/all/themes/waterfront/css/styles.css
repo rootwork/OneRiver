@@ -2188,7 +2188,8 @@ body {
 
 /* line 31, ../sass/components/_page.scss */
 #page {
-  background-color: rgba(238, 238, 238, 0.8);
+  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.85);
   text-shadow: rgba(238, 238, 238, 0.8) 0 1px 0;
 }
 @media (min-width: 960px) {

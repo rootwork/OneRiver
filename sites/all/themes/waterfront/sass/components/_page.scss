@@ -29,7 +29,8 @@ body {
 }
 
 #page {
-  background-color: rgba($or-white, 0.8);
+  background-color: $or-white;
+  background-color: rgba($or-white, 0.85);
   @include letterpress();
 
   @include breakpoint($bp-christian) {
