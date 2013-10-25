@@ -2523,6 +2523,11 @@ h1#page-title {
 /* Site name/slogan */
 /* line 10, ../sass/components/_sitename.scss */
 h1#site-name {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
   font-size: 3em;
   line-height: 1.5em;
   margin-top: 0em;
@@ -2531,11 +2536,11 @@ h1#site-name {
   margin-bottom: 0em;
   text-shadow: rgba(238, 238, 238, 0) 0 1px 0;
 }
-/* line 15, ../sass/components/_sitename.scss */
+/* line 16, ../sass/components/_sitename.scss */
 h1#site-name a {
   color: #477597;
 }
-/* line 19, ../sass/components/_sitename.scss */
+/* line 20, ../sass/components/_sitename.scss */
 h1#site-name a:hover, h1#site-name a:active {
   text-decoration: none;
   background-color: transparent;
@@ -2549,7 +2554,7 @@ h1#site-name a:hover, h1#site-name a:active {
   }
 }
 
-/* line 33, ../sass/components/_sitename.scss */
+/* line 34, ../sass/components/_sitename.scss */
 #site-slogan {
   font-size: 1.875em;
   line-height: 1.6em;
@@ -2559,7 +2564,7 @@ h1#site-name a:hover, h1#site-name a:active {
   margin-bottom: 0em;
 }
 @media (min-width: 960px) {
-  /* line 33, ../sass/components/_sitename.scss */
+  /* line 34, ../sass/components/_sitename.scss */
   #site-slogan {
     background-color: transparent;
     background-image: url('../images/abovegrade.png?1382147346');
@@ -2573,6 +2578,7 @@ h1#site-name a:hover, h1#site-name a:active {
     /* IE 6/7 fallback */
     *text-indent: -9999px;
     display: inline-block;
+    margin-left: 600px;
   }
   /* line 30, ../sass/mixins/_mixins-images.scss */
   #site-slogan:before {
