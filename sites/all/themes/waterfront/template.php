@@ -44,7 +44,7 @@ function waterfront_preprocess_html(&$vars) {
   // Add conditional CSS for IE6.
     // drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 6', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
   // Add external for Google Fonts.
-  drupal_add_css('//fonts.googleapis.com/css?family=Raleway:700,400|PT+Serif:400,700italic,400italic,700',array('type' => 'external'));
+  drupal_add_css('//fonts.googleapis.com/css?family=Raleway:700,500|PT+Serif:400,700italic,400italic,700',array('type' => 'external'));
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().
     //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
