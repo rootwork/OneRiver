@@ -2166,7 +2166,7 @@ body {
   background-attachment: fixed;
   background-image: url('../images/river_flickr-tomspix_480.jpg?1382140864');
 }
-@media (min-width: 480px) {
+@media (min-width: 550px) {
   /* line 8, ../sass/components/_page.scss */
   body {
     background-image: url('../images/river_flickr-tomspix_960.jpg?1382140803');
@@ -2522,6 +2522,11 @@ h1#page-title {
  */
 /* Site name/slogan */
 /* line 10, ../sass/components/_sitename.scss */
+#name-and-slogan {
+  width: 100%;
+}
+
+/* line 14, ../sass/components/_sitename.scss */
 h1#site-name {
   position: absolute !important;
   height: 1px;
@@ -2536,17 +2541,17 @@ h1#site-name {
   margin-bottom: 0em;
   text-shadow: rgba(238, 238, 238, 0) 0 1px 0;
 }
-/* line 16, ../sass/components/_sitename.scss */
+/* line 20, ../sass/components/_sitename.scss */
 h1#site-name a {
   color: #477597;
 }
-/* line 20, ../sass/components/_sitename.scss */
+/* line 24, ../sass/components/_sitename.scss */
 h1#site-name a:hover, h1#site-name a:active {
   text-decoration: none;
   background-color: transparent;
 }
 @media (min-width: 960px) {
-  /* line 10, ../sass/components/_sitename.scss */
+  /* line 14, ../sass/components/_sitename.scss */
   h1#site-name {
     display: inline-block;
     margin-right: 36px;
@@ -2554,7 +2559,7 @@ h1#site-name a:hover, h1#site-name a:active {
   }
 }
 
-/* line 34, ../sass/components/_sitename.scss */
+/* line 38, ../sass/components/_sitename.scss */
 #site-slogan {
   font-size: 1.875em;
   line-height: 1.6em;
@@ -2563,8 +2568,8 @@ h1#site-name a:hover, h1#site-name a:active {
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-@media (min-width: 960px) {
-  /* line 34, ../sass/components/_sitename.scss */
+@media (min-width: 550px) {
+  /* line 38, ../sass/components/_sitename.scss */
   #site-slogan {
     background-color: transparent;
     background-image: url('../images/abovegrade.png?1382147346');
@@ -2578,7 +2583,7 @@ h1#site-name a:hover, h1#site-name a:active {
     /* IE 6/7 fallback */
     *text-indent: -9999px;
     display: inline-block;
-    margin-left: 600px;
+    float: right;
   }
   /* line 30, ../sass/mixins/_mixins-images.scss */
   #site-slogan:before {

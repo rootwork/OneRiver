@@ -7,6 +7,10 @@
 
 /* Site name/slogan */
 
+#name-and-slogan {
+  width: 100%;
+}
+
 h1#site-name {
   @include element-invisible; // leaving styles in place in case we ever want to restore
   @include adjust-font-size-to(48px);
@@ -35,9 +39,9 @@ h1#site-name {
   @include adjust-font-size-to(30px);
   @include rhythm(0, 0, 0, 0, 30px);
 
-  @include breakpoint($bp-christian) {
+  @include breakpoint($bp-south) {
     @include ir("abovegrade.png");
     display: inline-block;
-    margin-left: 600px; // remove this line if we make the site name visible
+    float: right; // remove this line if we make the site name visible
   }
 }
