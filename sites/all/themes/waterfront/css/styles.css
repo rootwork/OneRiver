@@ -2164,25 +2164,25 @@ body {
   background-position: 0 50%;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('../images/waterfront-river_flickr-tomspix_480.jpg?1383442224');
+  background-image: url('../images/river_flickr-tomspix_480.jpg?1383442995');
 }
 @media (min-width: 550px) {
   /* line 8, ../sass/components/_page.scss */
   body {
-    background-image: url('../images/waterfront-river_flickr-tomspix_960.jpg?1383442224');
+    background-image: url('../images/river_flickr-tomspix_960.jpg?1383442995');
   }
 }
 @media (min-width: 960px) {
   /* line 8, ../sass/components/_page.scss */
   body {
     padding: 36px 0;
-    background-image: url('../images/waterfront-river_flickr-tomspix_1250.jpg?1383442224');
+    background-image: url('../images/river_flickr-tomspix_1250.jpg?1383442995');
   }
 }
 @media (min-width: 1200px) {
   /* line 8, ../sass/components/_page.scss */
   body {
-    background-image: url('../images/waterfront-river_flickr-tomspix_2000.jpg?1383442224');
+    background-image: url('../images/river_flickr-tomspix_2000.jpg?1383442995');
   }
 }
 
@@ -2572,7 +2572,7 @@ h1#site-name a:hover, h1#site-name a:active {
   /* line 38, ../sass/components/_sitename.scss */
   #site-slogan {
     background-color: transparent;
-    background-image: url('../images/waterfront-abovegrade.png?1383442224');
+    background-image: url('../images/abovegrade.png?1383442995');
     background-repeat: no-repeat;
     background-position: 0 0;
     display: block;
@@ -2863,7 +2863,7 @@ legend {
 .forward_link a,
 a.forward-page {
   display: block;
-  background-image: url('../images/waterfront-email.png?1383442224');
+  background-image: url('../images/email.png?1383442995');
   background-position: 0 50%;
   background-repeat: no-repeat;
   height: 48px;
@@ -2920,12 +2920,12 @@ a.forward-page:active {
 
 /* line 27, ../sass/components/_sharing.scss */
 .share-facebook {
-  background-image: url('../images/waterfront-facebook.png?1383442224');
+  background-image: url('../images/facebook.png?1383442995');
 }
 
 /* line 31, ../sass/components/_sharing.scss */
 .share-twitter {
-  background-image: url('../images/waterfront-twitter.png?1383442224');
+  background-image: url('../images/twitter.png?1383442995');
 }
 
 /**

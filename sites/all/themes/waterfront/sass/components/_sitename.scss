@@ -40,7 +40,7 @@ h1#site-name {
   @include rhythm(0, 0, 0, 0, 30px);
 
   @include breakpoint($bp-south) {
-    @include ir("waterfront-abovegrade.png");
+    @include ir("abovegrade.png");
     display: inline-block;
     float: right; // remove this line if we make the site name visible
   }
